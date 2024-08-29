@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace widget_circularity
 {
@@ -43,8 +34,6 @@ namespace widget_circularity
         }
         string _entry = string.Empty;
 
-        public event PropertyChangedEventHandler? PropertyChanged;
-
         private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -52,6 +41,18 @@ namespace widget_circularity
             {
                 case nameof(Entry):
                     textBox.Text = Entry;
+                    break;
+            }
+        }
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            switch (e.CloseReason)
+            {
+                case CloseReason.UserClosing:
+                    e.Cancel = true;
+                    Hide();
                     break;
             }
         }
