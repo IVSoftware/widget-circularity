@@ -1,4 +1,4 @@
-This might be helpful, but it's less of a "built-in" and more of a pattern or best practice. Let's make it so that whenever the text changes in WidgetA, the text in WidgetB will track. And then, also, whenever the text changes in WidgetB, widget A will track. What prevents this from being circular?
+This might be helpful, but it's less of a "built-in" and more of a pattern or best practice. Let's make it so that whenever the text changes in WidgetA, the text in WidgetB will track. And then, also, whenever the text changes in WidgetB, widget A will track. What prevents this arrangement from being circular?
 
 #### Main Form
 
