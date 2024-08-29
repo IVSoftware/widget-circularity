@@ -39,14 +39,14 @@
             textBox.Size = new Size(265, 31);
             textBox.TabIndex = 0;
             // 
-            // WidgetA
+            // WidgetB
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(478, 244);
             Controls.Add(textBox);
-            Name = "WidgetA";
-            Text = "Widget A";
+            Name = "WidgetB";
+            Text = "Widget B";
             ResumeLayout(false);
             PerformLayout();
         }

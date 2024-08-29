@@ -35,6 +35,6 @@ namespace widget_circularity
             WidgetB.Show(this);
         }
         WidgetA WidgetA { get; } = new() { StartPosition = FormStartPosition.Manual };
-        WidgetA WidgetB { get; } = new() { StartPosition = FormStartPosition.Manual };
+        WidgetB WidgetB { get; } = new() { StartPosition = FormStartPosition.Manual };
     }
 }

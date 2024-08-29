@@ -1,4 +1,4 @@
-This may be helpful, but it's less of a "built-in" and more of a pattern or best practice. Let's make it so that whenever the text changes in `WidgetA`, the text in `WidgetB` will track. And then, also, whenever the text changes in `WidgetB`, `WidgetA` will track. The question is, what prevents this arrangement from being circular?
+This may be helpful, but it's less of a "built-in" and more of a pattern or best practice. Let's make it so that whenever the text changes in `WidgetA`, the text in `WidgetB` will track. And then, also, whenever the text changes in `WidgetB`, `WidgetA` will track. The question is, what prevents this from being circular?
 
 [![widgets][1]][1]
 
@@ -39,7 +39,7 @@ public partial class MainForm : Form
         WidgetB.Show(this);
     }
     WidgetA WidgetA { get; } = new() { StartPosition = FormStartPosition.Manual };
-    WidgetA WidgetB { get; } = new() { StartPosition = FormStartPosition.Manual };
+    WidgetB WidgetB { get; } = new() { StartPosition = FormStartPosition.Manual };
 }
 ```
 
@@ -106,4 +106,5 @@ public partial class WidgetA : Form, INotifyPropertyChanged
 }
 ```
 
-  [1]: https://i.sstatic.net/yIB9Q10w.png
+
+  [1]: https://i.sstatic.net/82cQSKmT.png
