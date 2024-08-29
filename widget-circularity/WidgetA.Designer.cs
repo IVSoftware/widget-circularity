@@ -35,7 +35,7 @@
             // 
             textBox.Location = new Point(97, 85);
             textBox.Name = "textBox";
-            textBox.PlaceholderText = "Test Circularity";
+            textBox.PlaceholderText = "See Title Bar for Origin";
             textBox.Size = new Size(265, 31);
             textBox.TabIndex = 0;
             // 

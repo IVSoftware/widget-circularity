@@ -28,18 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            buttonSetProgrammatically = new Button();
             SuspendLayout();
+            // 
+            // buttonSetProgrammatically
+            // 
+            buttonSetProgrammatically.Location = new Point(66, 103);
+            buttonSetProgrammatically.Name = "buttonSetProgrammatically";
+            buttonSetProgrammatically.Size = new Size(324, 34);
+            buttonSetProgrammatically.TabIndex = 0;
+            buttonSetProgrammatically.Text = "Set Programmatically";
+            buttonSetProgrammatically.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(478, 244);
+            Controls.Add(buttonSetProgrammatically);
             Name = "MainForm";
             Text = "Main Form";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttonSetProgrammatically;
     }
 }
